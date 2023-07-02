@@ -42,15 +42,22 @@ const SignIn = () => {
     <center>
 
     <div className="inline-block">
-   <Button variant="outlined" style={{ display: "inline-block" ,margin: "10px"}} >Login from google</Button>
-    <Button variant="outlined" style={{ display: "inline-block" ,margin: "10px"}}>Login from Facebook</Button>
+   <Button variant="outlined" style={{ display: "inline-block" ,margin: "10px"}} >
+    <div style={{"margin-right":"10px",display : "inline-block"}}>
+   <img width="18" height="18" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/> </div>
+    Login from google</Button>
+    <Button variant="outlined" style={{ display: "inline-block" ,margin: "10px"}}>
+      <div  style={{"margin-right":"10px",display : "inline-block"}}>
+    <img width="18" height="20" src="https://img.icons8.com/fluency/48/facebook.png" alt="facebook"/>
+      </div>
+      Login from Facebook</Button>
     <hr style={{"width":"40%",display: "inline-block", fontWeight: "bold"}} />
     Or
     <hr style={{"width":"40%",display: "inline-block", fontWeight: "bold"}} />
     </div>
       <form onSubmit={handleSignIn}>
-      <TextField id="outlined-basic" label="EmailId" variant="outlined" style={{"height":"10%","width":"25%"}}/><br/><br />
-      <TextField id="outlined-basic" label="password" variant="outlined" style={{"height":"10%","width":"25%"}}/><br/><br />
+      <TextField id="outlined-basic" label="EmailId" variant="outlined" style={{"height":"10%","width":"80%"}}/><br/><br />
+      <TextField id="outlined-basic" label="password" variant="outlined" style={{"height":"10%","width":"80%"}}/><br/><br />
       <div style={{"fontSize":"10px","color":"Black"}}>
       By clicking "Sign in," you agree to our Terms of Use and our Privacy Policy.<br/>
         </div><br />
